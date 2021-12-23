@@ -16,7 +16,9 @@
     "url": "https://github.com/Xuan5422/PULSE/issues"
   },
   "homepage": "https://github.com/Xuan5422/PULSE#readme",
-  "dependencies": {},
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp-autoprefixer": "^8.0.0",
