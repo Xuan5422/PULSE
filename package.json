@@ -1,0 +1,28 @@
+{
+  "name": "pulse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xuan5422/PULSE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xuan5422/PULSE/issues"
+  },
+  "homepage": "https://github.com/Xuan5422/PULSE#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0"
+  }
+}
