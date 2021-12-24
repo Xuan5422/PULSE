@@ -1,14 +1,1 @@
-* {
-  font-family: 'Museo Sans Cyrl', sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-div {
-  font-weight: 500;
-  font-size: 20px;
-  font-style: normal;
-}
-/*# sourceMappingURL=style.css.map */
+*{font-family:"Museo Sans Cyrl",sans-serif;box-sizing:border-box;margin:0;padding:0}div{font-weight:500;font-size:20px;font-style:normal}.test{font-weight:700;font-size:25px;font-style:normal;color:green}
