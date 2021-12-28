@@ -1,21 +1,37 @@
 .icon-block
+    width: 100%
     display: flex
     justify-content: flex-end
     align-items: flex-start
+    flex-wrap: wrap
+    &_sp-betw
+        justify-content: space-between
     &__item
-        display: flex
-        flex-direction: column
-        align-items: center
-    &__img
-        width: 42px
-        height: 46px
-    &__descr
-        margin-top: 20px
-        width: 136px
-        height: 29px
+        width: 108px
+        margin: 0 24px
         font-style: normal
         font-weight: 500
         font-size: 14px
         line-height: 14px
         text-align: center
         color: #FFFFFF
+        a
+            color: #FF0000
+        &_big
+            margin: 0
+            width: 273px
+            font-weight: 300
+            line-height: 18px
+            color: #0D0D0D
+    &__img
+        display: block
+        margin: 0 auto
+        margin-bottom: 20px
+        &_mb35
+            margin-bottom: 35px
+    span
+        font-weight: 700
+        font-size: 18px
+        line-height: 29px
+    
+
