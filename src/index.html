@@ -6,8 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script defer src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script defer src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script defer src="js/slick.min.js"></script>
+	<script defer src="js/script.js"></script>
+	<script defer src="sass/blocks/card/ShowCard.js"></script>
+	
 
 	<title>PULSE</title>
 </head>
@@ -17,7 +24,7 @@
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo">
-					<img src="icons/logo.png" alt="logo" >
+					<img src="icons/logo.png" alt="logo">
 				</a>
 				<div class="header__official">
 					Официальный представитель<br>
@@ -34,7 +41,7 @@
 			<h2 class="promo__subtitle">
 				с учётом Вашего уровня подготовки
 			</h2>
-			
+
 			<div class="icon-block">
 				<div class="icon-block__item">
 					<img src="icons/main_screen/timer.png" alt="timer" class="icon-block__img">
@@ -50,7 +57,7 @@
 				</div>
 			</div>
 			<div class="promo__botton-wrapper">
-			<button class="button button_big">заказать кОНСУЛЬТАЦИЮ</button>
+				<button class="button button_big">заказать кОНСУЛЬТАЦИЮ</button>
 			</div>
 			<div class="promo__catalog">или <a href="#" class="promo__link">ПЕРЕЙТИ В КАТАЛОГ</a></div>
 		</div>
@@ -61,28 +68,392 @@
 			<h2 class="benefits__title">
 				НАШИ ПРЕИМУЩЕСТВА
 			</h2>
-	
+
 			<div class="icon-block icon-block_sp-betw">
 				<div class="icon-block__item icon-block__item_big">
 					<img src="icons/advantages/cup.png" alt="cup" class="icon-block__img icon-block__img_mb35">
 					<span>Делимся опытом</span><br><br>
-					Наши сотрудники всегда готовы поделиться своим опытом,<br> так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
+					Наши сотрудники всегда готовы поделиться своим опытом,<br> так как сами бегают полумарафоны,
+					переплыли Босфор, готовятся к соревнованиям по триатлону!
 				</div>
 				<div class="icon-block__item icon-block__item_big ">
 					<img src="icons/advantages/heart.png" alt="heart" class="icon-block__img icon-block__img_mb35">
 					<span>Заботимся о здоровье</span><br><br>
-					Мы работаем для того,<br> чтобы Ваши занятия спортом шли на<br> пользу Вашему здоровью и были в<br> радость Вам и Вашим близким!
+					Мы работаем для того,<br> чтобы Ваши занятия спортом шли на<br> пользу Вашему здоровью и были в<br>
+					радость Вам и Вашим близким!
 				</div>
 				<div class="icon-block__item icon-block__item_big">
 					<img src="icons/advantages/shoe.png" alt="shoe" class="icon-block__img icon-block__img_mb35">
 					<span>Учим бегать</span> <br><br>
-					Помогаем с обучением<br> правильной технике бега!<br> Дружим с крупнейшей школой бега в<br> России - <a href="">I LOVE RUNNING.</a>
+					Помогаем с обучением<br> правильной технике бега!<br> Дружим с крупнейшей школой бега в<br> России -
+					<a href="">I LOVE RUNNING.</a>
 				</div>
+			</div>
+		</div>
+	</section>
+	<section class="consultaition">
+		<div class="container">
+			<h2 class="consultaition__title">
+				Получите бесплатную консультацию<br> по подбору пульсометра
+			</h2>
+			<div class="consultaition__descr">
+				Просто заполните форму заявки<br> и мы перезвоним вам в течении 10 минут
+			</div>
+			<div class="consultaition__form-wrapp">
+				<form class="contact-form" action="#">
+					<input class="contact-form__input" name="name" required type="text" placeholder="Ваше имя">
+					<input class="contact-form__input" name="phone" required type="number" placeholder="Ваш телефон">
+					<input class="contact-form__input" name="email" required type="email" placeholder="Ваш E-mail">
+					<div class="contact-form__wrapp">
+						<button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+	</section>
+	<section class="slider">
+		<div class="container">
+			<div class="slider__block">
+				<div>
+					<img src="img/slide_1.jpg" alt="slide_1">
+				</div>
+				<div>
+					<img src="img/slide_2.jpg" alt="slide_2">
+				</div>
+				<div>
+					<img src="img/slide_3.jpg" alt="slide_3">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="catalog">
+		<div class="container">
+			<h2 class="catalog__title">Каталог пульсометров</h2>
+			<ul class="catalog__block">
+				<li class="catalog__item catalog__item_active"><div>Для фитнеса</div></li>
+				<li class="catalog__item"><div>для бега</div></li>
+				<li class="catalog__item"><div>для триатлона</div></li>
+			</ul>
+			<div class="catalog__wrapp">
+
+				<div class="card-wrapp">
+					<div class="card">
+						<img src="img/pulsometr.png" alt="pulsometr" class="card__img">
+						<div class="card__subtitle">Пульсометр Polar FT1</div>
+						<div class="card__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="" class="card__link">ПОДРОБНЕЕ</a>
+						<hr>
+						<div class="card__footer">
+							<div class="card__prices">
+								<div class="card__old-price">4 750 руб.</div>
+								<div class="card__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="card-back hidden">
+						<div class="card-back__desc-wrapp">
+							<div class="card-back__desc">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</div>
+							<div class="card-back__desc">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</div>
+							<div class="card-back__desc">Также Вы увидите информацию о расходе калорий за тренировку;</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+						</div>
+						<a href="" class="card__link card-back__link">НАЗАД</a>
+						<hr>
+						<div class="card-back__footer">
+							<div class="card-back__prices">
+								<div class="card-back__old-price">4 750 руб.</div>
+								<div class="card-back__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-wrapp">
+					<div class="card">
+						<img src="img/pulsometr.png" alt="pulsometr" class="card__img">
+						<div class="card__subtitle">Пульсометр Suunto M2</div>
+						<div class="card__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="" class="card__link">ПОДРОБНЕЕ</a>
+						<hr>
+						<div class="card__footer">
+							<div class="card__prices">
+								<div class="card__old-price">6 690 руб.</div>
+								<div class="card__new-price">6 641 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="card-back hidden">
+						<div class="card-back__desc-wrapp">
+							<div class="card-back__desc">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</div>
+							<div class="card-back__desc">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</div>
+							<div class="card-back__desc">Также Вы увидите информацию о расходе калорий за тренировку;</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+						</div>
+						<a href="" class="card__link card-back__link">НАЗАД</a>
+						<hr>
+						<div class="card-back__footer">
+							<div class="card-back__prices">
+								<div class="card-back__old-price">6 690 руб.</div>
+								<div class="card-back__new-price">6 641 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-wrapp">
+					<div class="card">
+						<img src="img/pulsometr.png" alt="pulsometr" class="card__img">
+						<div class="card__subtitle">Пульсометр Polar FT4</div>
+						<div class="card__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="" class="card__link">ПОДРОБНЕЕ</a>
+						<hr>
+						<div class="card__footer">
+							<div class="card__prices">
+								<div class="card__old-price">7 390 руб.</div>
+								<div class="card__new-price">7 021 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="card-back hidden">
+						<div class="card-back__desc-wrapp">
+							<div class="card-back__desc">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</div>
+							<div class="card-back__desc">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</div>
+							<div class="card-back__desc">Также Вы увидите информацию о расходе калорий за тренировку;</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+						</div>
+						<a href="" class="card__link card-back__link">НАЗАД</a>
+						<hr>
+						<div class="card-back__footer">
+							<div class="card-back__prices">
+								<div class="card-back__old-price">7 390 руб.</div>
+								<div class="card-back__new-price">7 021 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-wrapp">
+					<div class="card">
+						<img src="img/pulsometr.png" alt="pulsometr" class="card__img">
+						<div class="card__subtitle">Пульсометр Polar FT1</div>
+						<div class="card__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="" class="card__link">ПОДРОБНЕЕ</a>
+						<hr>
+						<div class="card__footer">
+							<div class="card__prices">
+								<div class="card__old-price">4 750 руб.</div>
+								<div class="card__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="card-back hidden">
+						<div class="card-back__desc-wrapp">
+							<div class="card-back__desc">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</div>
+							<div class="card-back__desc">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</div>
+							<div class="card-back__desc">Также Вы увидите информацию о расходе калорий за тренировку;</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+						</div>
+						<a href="" class="card__link card-back__link">НАЗАД</a>
+						<hr>
+						<div class="card-back__footer">
+							<div class="card-back__prices">
+								<div class="card-back__old-price">4 750 руб.</div>
+								<div class="card-back__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-wrapp">
+					<div class="card">
+						<img src="img/pulsometr.png" alt="pulsometr" class="card__img">
+						<div class="card__subtitle">Пульсометр Polar FT1</div>
+						<div class="card__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="" class="card__link">ПОДРОБНЕЕ</a>
+						<hr>
+						<div class="card__footer">
+							<div class="card__prices">
+								<div class="card__old-price">4 750 руб.</div>
+								<div class="card__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="card-back hidden">
+						<div class="card-back__desc-wrapp">
+							<div class="card-back__desc">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</div>
+							<div class="card-back__desc">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</div>
+							<div class="card-back__desc">Также Вы увидите информацию о расходе калорий за тренировку;</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+						</div>
+						<a href="" class="card__link card-back__link">НАЗАД</a>
+						<hr>
+						<div class="card-back__footer">
+							<div class="card-back__prices">
+								<div class="card-back__old-price">4 750 руб.</div>
+								<div class="card-back__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-wrapp">
+					<div class="card">
+						<img src="img/pulsometr.png" alt="pulsometr" class="card__img">
+						<div class="card__subtitle">Пульсометр Polar FT1</div>
+						<div class="card__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="" class="card__link">ПОДРОБНЕЕ</a>
+						<hr>
+						<div class="card__footer">
+							<div class="card__prices">
+								<div class="card__old-price">4 750 руб.</div>
+								<div class="card__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="card-back hidden">
+						<div class="card-back__desc-wrapp">
+							<div class="card-back__desc">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</div>
+							<div class="card-back__desc">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</div>
+							<div class="card-back__desc">Также Вы увидите информацию о расходе калорий за тренировку;</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+						</div>
+						<a href="" class="card__link card-back__link">НАЗАД</a>
+						<hr>
+						<div class="card-back__footer">
+							<div class="card-back__prices">
+								<div class="card-back__old-price">4 750 руб.</div>
+								<div class="card-back__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-wrapp">
+					<div class="card">
+						<img src="img/pulsometr.png" alt="pulsometr" class="card__img">
+						<div class="card__subtitle">Пульсометр Polar FT1</div>
+						<div class="card__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="" class="card__link">ПОДРОБНЕЕ</a>
+						<hr>
+						<div class="card__footer">
+							<div class="card__prices">
+								<div class="card__old-price">4 750 руб.</div>
+								<div class="card__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="card-back hidden">
+						<div class="card-back__desc-wrapp">
+							<div class="card-back__desc">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</div>
+							<div class="card-back__desc">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</div>
+							<div class="card-back__desc">Также Вы увидите информацию о расходе калорий за тренировку;</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+						</div>
+						<a href="" class="card__link card-back__link">НАЗАД</a>
+						<hr>
+						<div class="card-back__footer">
+							<div class="card-back__prices">
+								<div class="card-back__old-price">4 750 руб.</div>
+								<div class="card-back__new-price">4 500 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-wrapp">
+					<div class="card">
+						<img src="img/pulsometr.png" alt="pulsometr" class="card__img">
+						<div class="card__subtitle">Пульсометр Suunto M2</div>
+						<div class="card__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="" class="card__link">ПОДРОБНЕЕ</a>
+						<hr>
+						<div class="card__footer">
+							<div class="card__prices">
+								<div class="card__old-price">6 690 руб.</div>
+								<div class="card__new-price">6 641 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="card-back hidden">
+						<div class="card-back__desc-wrapp">
+							<div class="card-back__desc">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</div>
+							<div class="card-back__desc">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</div>
+							<div class="card-back__desc">Также Вы увидите информацию о расходе калорий за тренировку;</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+						</div>
+						<a href="" class="card__link card-back__link">НАЗАД</a>
+						<hr>
+						<div class="card-back__footer">
+							<div class="card-back__prices">
+								<div class="card-back__old-price">6 690 руб.</div>
+								<div class="card-back__new-price">6 641 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="card-wrapp">
+					<div class="card">
+						<img src="img/pulsometr.png" alt="pulsometr" class="card__img">
+						<div class="card__subtitle">Пульсометр Polar FT4</div>
+						<div class="card__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
+						<a href="" class="card__link">ПОДРОБНЕЕ</a>
+						<hr>
+						<div class="card__footer">
+							<div class="card__prices">
+								<div class="card__old-price">7 390 руб.</div>
+								<div class="card__new-price">7 021 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="card-back hidden">
+						<div class="card-back__desc-wrapp">
+							<div class="card-back__desc">Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</div>
+							<div class="card-back__desc">Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</div>
+							<div class="card-back__desc">Также Вы увидите информацию о расходе калорий за тренировку;</div>
+							<div class="card-back__desc">Вы сможете посмотреть данные по 10 тренировкам.</div>
+						</div>
+						<a href="" class="card__link card-back__link">НАЗАД</a>
+						<hr>
+						<div class="card-back__footer">
+							<div class="card-back__prices">
+								<div class="card-back__old-price">7 390 руб.</div>
+								<div class="card-back__new-price">7 021 руб.</div>		
+							</div>
+							<button class="button button_card">КУПИТЬ</button>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</section>
 
 </body>
-
 
 </html>
