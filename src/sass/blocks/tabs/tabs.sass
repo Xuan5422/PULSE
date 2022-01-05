@@ -1,0 +1,33 @@
+.tabs
+    padding: 0
+    margin-bottom: 0
+    display: flex
+    justify-content: center
+    align-items: flex-start
+    list-style-type: none
+    &:first-child
+        margin-left: 0
+    &__item
+        margin: 0 5px
+        width: 223px
+        height: 52px
+        border: 2px solid #D0D0D0
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 50px
+        text-align: center
+        text-transform: uppercase
+        color: #6B6B6B
+        transform: skewX(-17deg)
+        cursor: pointer
+        transition: 0.6s all
+        &:hover
+            box-shadow: 3px 3px 10px $btncolor
+            border: none
+        & div
+            transform: skewX(17deg)
+        &_active
+            background-color: $btncolor
+            color: #FFFFFF
+            border: none

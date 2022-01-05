@@ -1,6 +1,7 @@
-let cardBlock = document.querySelector('.catalog__wrapp');
+let cardBlock = document.querySelector('.catalog__card-box');
 cardBlock.addEventListener('click', (Event) => {
     Event.preventDefault();
+    // console.dir(Event);
     let card = Event.target.parentNode,
     card_wrapp = Event.target.parentNode.parentNode,
     card_back;
