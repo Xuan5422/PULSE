@@ -1,6 +1,40 @@
 .footer
-    min-height: 630px
-
-
-    
-
+	position: relative
+	min-height: 630px
+	margin-top: 40px
+	&__info
+		position: absolute
+		top: 0
+		left: 50%
+		padding-top: 50px
+		padding-bottom: 56px
+		transform: translateX(-50%)
+		width: 460px
+		height: 270px
+		background: $btncolor
+		z-index: 300
+	&__addr
+		font-style: normal
+		font-weight: 500
+		font-size: 20px
+		line-height: 20px
+		text-align: center
+		color: #FFFFFF
+	&__phone
+		margin-top: 36px
+		display: block
+		font-style: normal
+		font-weight: 700
+		font-size: 20px
+		line-height: 20px
+		text-align: center
+		color: #FFFFFF
+	&__social
+		display: flex
+		justify-content: center
+		margin-top: 36px
+	&__social-item
+		img
+			margin: 0 15px 0 15px
+			width: 30px
+			height: 30px
