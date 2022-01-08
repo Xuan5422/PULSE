@@ -1,0 +1,71 @@
+.overlay
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba( 0, 0, 0, 0.70)
+    top: 0
+    &_off
+        display: none
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate( -50%, -50%)
+    width: 382px
+    min-height: 417px
+    padding: 35px 40px 40px 40px
+    background: #F2F2F2
+    &_off
+        display: none
+    &__subtitle
+
+        font-style: normal
+        font-weight: 700
+        font-size: 19px
+        line-height: 19px
+        text-align: center
+        color: #0D0D0D
+    &__descr
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 14px
+        text-align: center
+        color: #0D0D0D
+        margin-top: 10px
+        margin-bottom: 26px
+    &__close
+        position: absolute
+        font-size: 30px
+        top: -15px
+        right: -30px
+        color: $btncolor
+        cursor: pointer
+    .error
+        margin-bottom: 7px
+        border: 1px dashed red
+    label.error
+        border: none
+        text-align: center
+
+
+
+
+
+
+/** #order
+    left: 20% **/
+
+#phanks
+    // left: 80%
+    min-height: 130px
+    padding-bottom: 10px
+
+    .modal
+        &__descr
+            line-height: 22px
+
+.contact-form
+    &__input
+        &_bay
+            margin-bottom: 17px
