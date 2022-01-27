@@ -1,0 +1,96 @@
+.card
+    width: 303px
+    min-height: 442px
+    background: #FFFFFF
+    border: 2px solid #E8E8E8
+    padding: 20px 20px
+    transition: .6s all
+    &__img
+        max-width: 100%
+        height: 215px
+        display: block
+        margin: 0 auto 15px auto
+    &__subtitle
+        font-style: normal
+        font-weight: 700
+        font-size: 16px
+        text-align: center
+        color: #0D0D0D
+    &__descr
+        margin-top: 15px
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        text-align: center
+        color: #0D0D0D
+    &__link
+        display: block
+        margin-top: 10px
+        margin-bottom: 17px
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        text-align: center
+        color: $btncolor
+        &:hover
+            color: $btncolor
+            text-shadow: 0 0 15px $btncolor
+    &__footer
+        margin-top: 17px
+        display: flex
+        justify-content: space-between
+    &__prices
+        font-style: normal
+    &__old-price
+        font-weight: 300
+        font-size: 14px
+        text-decoration-line: line-through
+        color: #555555
+    &__new-price
+        font-weight: 700
+        font-size: 20px
+        color: #050505
+.hidden
+    display: none
+
+.card-back
+    width: 303px
+    min-height: 442px
+    background: #FFFFFF
+    border: 2px solid #E8E8E8
+    padding: 20px 20px
+    &__desc-wrapp
+        min-height: 311px
+    &__desc
+        padding-left: 10px
+        position: relative
+        font-weight: 300
+        font-size: 14px
+        line-height: 21px
+        color: #555555
+        &:before
+            content: ''
+            position: absolute
+            width: 5px
+            height: 5px
+            background: $btncolor
+            top: 7px
+            left: -3px
+    &__footer
+        margin-top: 17px
+        display: flex
+        justify-content: space-between
+    &__prices
+        font-style: normal
+    &__old-price
+        font-weight: 300
+        font-size: 14px
+        text-decoration-line: line-through
+        color: #555555
+    &__new-price
+        font-weight: 700
+        font-size: 20px
+        color: #050505
+
+
+
