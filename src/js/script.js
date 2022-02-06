@@ -30,12 +30,12 @@ function valForm(form) {
         },
         messages: {
             name: {
-                required:"Подалуйста введите имя",
+                required:"Пожалуйста введите имя",
                 minlength: jQuery.validator.format("Имя минимум из {0} символов.")
             },
     
             phone: {
-                required:"Подалуйста введите номер телефона",
+                required:"Пожалуйста введите номер телефона",
                 minlength: jQuery.validator.format("Номер минимум из {0} символов.")
             },
             email: "Пожалуйста введите свой e-mail"
@@ -74,12 +74,12 @@ $('#order form').validate({
 
     messages: {
         name: {
-            required:"Подалуйста введите имя",
+            required:"Пожалуйста введите имя",
             minlength: jQuery.validator.format("Имя минимум из {0} символов.")
         },
 
         phone: {
-            required:"Подалуйста введите номер телефона",
+            required:"Пожалуйста введите номер телефона",
             minlength: jQuery.validator.format("Номер минимум из {0} символов.")
         },
         email: "Пожалуйста введите свой e-mail"
@@ -117,12 +117,12 @@ $('.consultaition__form-wrapp .contact-form').validate({
 
     messages: {
         name: {
-            required:"Подалуйста введите имя",
+            required:"Пожалуйста введите имя",
             minlength: jQuery.validator.format("Имя минимум из {0} символов.")
         },
 
         phone: {
-            required:"Подалуйста введите номер телефона",
+            required:"Пожалуйста введите номер телефона",
             minlength: jQuery.validator.format("Номер минимум из {0} символов.")
         },
         email: "Пожалуйста введите свой e-mail"
